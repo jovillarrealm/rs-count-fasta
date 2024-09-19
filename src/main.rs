@@ -53,7 +53,7 @@ fn main() -> io::Result<()> {
     let args: Vec<String> = env::args().collect();
     if args.len() < 2 {
         //eprintln!("Usage: {} [-i interval_size] [-c csv_file] <fasta_file1> [fasta_file2 ...]", args[0]);
-        eprintln!("Usage: {} [-c csv_file] <fasta_file1> [fasta_file2 ...]", args[0]);
+        eprintln!("Usage: {} [-c csv_file] <fasta_file1>", args[0]);
         std::process::exit(1);
     }
 

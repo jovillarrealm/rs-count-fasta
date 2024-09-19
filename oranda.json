@@ -1,0 +1,9 @@
+{
+    "build": {
+        "path_prefix": "count-fasta-rs"
+    },
+    "styles": {
+        "theme": "hacker",
+        "favicon": "https://www.udea.edu.co/favicon.ico"
+    }
+}

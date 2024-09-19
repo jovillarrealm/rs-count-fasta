@@ -11,6 +11,7 @@ When a csv file is not specified
 
 Output to stdout will look like this
 
+```yaml
     Total length of sequence:       46759715 bp
     Total number of sequences:      32
     Average contig length is:       1461241 bp
@@ -23,12 +24,13 @@ Output to stdout will look like this
     GC %:                           41.78 %
     Number of Ns:                   2900
     Ns %:                           0.01 %
+```
 
 If the csv file was specified, then the created file will look like this
-
+```rs
     filename;assembly_length;number_of_sequences;average_length;largest_contig;shortest_contig;N50;GC_percentage;total_N;N_percentage
     "GCA_024699835_Aphelenchoides-besseyi_AORJ.fna";46759715;32;1461241.09;18100598;214;16068654;41.78;2900;0.01
-
+```
 ### Notes on usage
 
 Concurrency is not recommended when a new file has to be created, otherwise the header line may result out of order.
