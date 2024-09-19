@@ -352,8 +352,6 @@ fn append_to_csv(results: &AnalysisResults, csv_filename: &str) -> io::Result<()
         (results.gc_count as f64 / results.total_length as f64) * 100.0,
         results.n_count,
         (results.n_count as f64 / results.total_length as f64) * 100.0,
-        //results.n25,
-        //results.n75,
     )?;
 
 

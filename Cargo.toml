@@ -23,7 +23,7 @@ inherits = "release"
 lto = "thin"
 
 [dependencies]
-libc = "0.2.158"
+libc = "0.2"
 
 # Config for 'cargo dist'
 [workspace.metadata.dist]
