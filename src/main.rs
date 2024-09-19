@@ -340,7 +340,7 @@ fn append_to_csv(results: &AnalysisResults, csv_filename: &str) -> io::Result<()
     }
     writeln!(
         file,
-        "{:?};{};{};{:.2};{};{};{};{:.2};{};{:.2}",
+        "{:?};{};{};{};{};{};{};{};{};{}",
         //results.filenames.join("+"),
         Path::new(&results.filenames[0]).file_name().unwrap(),
         results.total_length,

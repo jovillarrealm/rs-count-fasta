@@ -1,8 +1,8 @@
 [package]
-name = "rs-count-fasta"
-version = "0.1.0"
+name = "count-fasta-rs"
+version = "0.2.0"
 edition = "2021"
-repository = "https://github.com/jovillarrealm/csng-scripts"
+repository = "https://github.com/jovillarrealm/count-fasta-rs"
 
 [profile.release]
 opt-level = 3
