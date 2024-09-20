@@ -23,6 +23,7 @@ inherits = "release"
 lto = "thin"
 
 [dependencies]
+bio = "2.0.3"
 libc = "0.2"
 
 # Config for 'cargo dist'
