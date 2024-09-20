@@ -139,6 +139,12 @@ fn process_secuence(
     lengths.push(length);
 }
 
+/// Calculate N25, N50, N75 stats
+///
+/// # Arguments
+///
+/// * `results` - The `AnalysisResults` struct containing the analysis results
+/// * `interval_size` - The interval size used for the length histogram
 fn calc_nq_stats(lengths: &mut Vec<usize>, results: &mut AnalysisResults) {
     lengths.sort_unstable_by(|a, b| b.cmp(a)); // Sort in descending order
     let mut cumulative_length = 0;
@@ -168,7 +174,7 @@ fn calc_nq_stats(lengths: &mut Vec<usize>, results: &mut AnalysisResults) {
 ///
 /// * `results` - The `AnalysisResults` struct containing the analysis results
 /// * `interval_size` - The interval size used for the length histogram
-//fn print_results(results: &AnalysisResults, interval_size: usize) {
+//fn print_results(results: &AnalysisResults) {
 fn print_results(results: &AnalysisResults) {
     let mut stdout = BufWriter::new(stdout());
     //println!("\nAnalysis Results for: {}", results.filenames.join(", "));
